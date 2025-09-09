@@ -1,0 +1,78 @@
+/* Container Styling */
+.projects-container {
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Title Animation */
+.page-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 0.8s ease-out forwards;
+}
+
+/* Grid Layout */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Project Card */
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  animation: fadeInUp 0.9s ease forwards;
+  animation-delay: calc(var(--i, 0) * 0.2s);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Project Titles */
+.project-card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2a2a2a;
+}
+
+/* Tech Stack Tag */
+.tech-stack {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 5px 10px;
+  background: #eef3ff;
+  color: #3a57e8;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

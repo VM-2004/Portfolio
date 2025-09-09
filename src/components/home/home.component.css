@@ -1,0 +1,103 @@
+/* Fullscreen container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  height: 100vh; /* fill viewport */
+  background-color: #f7f7f7;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Profile image */
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.text-section {
+  max-width: 450px;
+}
+
+/* Headings */
+.text-section h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Paragraph */
+.text-section p {
+  margin: 10px 0 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.circle-btn {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.circle-btn:hover {
+  transform: scale(1.15) rotate(5deg);
+}
+
+/* Button colors */
+.resume { background-color: #f2a900; color: black; }
+.projects { background-color: #ff4136; color: white; }
+.contact { background-color: #7fdbff; color: black; }
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in { animation: fadeIn 1.5s ease forwards; }
+.fade-in-delay { animation: fadeIn 2s ease forwards; }
+.slide-up { animation: slideUp 1.8s ease forwards; }
+
+.bounce {
+  animation: bounceIn 1.8s ease;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}

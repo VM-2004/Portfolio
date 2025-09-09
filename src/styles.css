@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-bg: #ffffff;
+  --primary-text: #222;
+  --footer-bg: linear-gradient(135deg, #3a57e8, #2a44c7);
+  --footer-text: #ffffff;
+}
+
+/* Light Theme */
+body.light-theme {
+  --primary-bg: #ffffff;
+  --primary-text: #222;
+  --footer-bg: linear-gradient(135deg, #3a57e8, #2a44c7);
+  --footer-text: #ffffff;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  --primary-bg: #111;
+  --primary-text: #eee;
+  --footer-bg: linear-gradient(135deg, #1e1e1e, #333);
+  --footer-text: #ddd;
+}
+
+/* Resume Theme */
+body.resume-theme {
+  --primary-bg: #fdfdfd;
+  --primary-text: #222;
+  --footer-bg: linear-gradient(135deg, #0073b1, #00bcd4);
+  --footer-text: #ffffff;
+}

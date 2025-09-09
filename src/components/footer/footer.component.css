@@ -1,0 +1,42 @@
+:host {
+  display: block;
+}
+
+/* Footer Style */
+.site-footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+  animation: fadeIn 1.2s ease forwards;
+  opacity: 0;
+  border-radius: 30px 30px 0 0;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
+}
+
+.site-footer .footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.site-footer .social-icons {
+  margin-top: 15px;
+}
+
+.site-footer .social-icons a {
+  margin: 0 10px;
+  color: var(--footer-text);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.site-footer .social-icons a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* gold hover */
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}

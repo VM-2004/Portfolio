@@ -1,0 +1,109 @@
+/* Page Container */
+.contact-container {
+  padding: 50px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  animation: fadeSlideUp 1s ease forwards;
+  opacity: 0;
+}
+
+/* Title Animation */
+.contact-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #222;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideDown 0.8s ease forwards;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.6s forwards;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeInUp 1s ease 0.8s forwards;
+  opacity: 0;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #3a57e8;
+  box-shadow: 0 0 10px rgba(58, 87, 232, 0.2);
+  transform: scale(1.02);
+}
+
+/* Button Styling */
+.submit-btn {
+  background: #3a57e8;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease 1s forwards;
+}
+
+.submit-btn:hover {
+  background: #2a44c7;
+  transform: translateY(-5px) scale(1.05);
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+}
+
+/* Keyframes */
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

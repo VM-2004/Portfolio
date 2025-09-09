@@ -1,0 +1,67 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 15px 50px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Left Section */
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .circle {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #f4a300; /* Yellow Circle */
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .role {
+      font-size: 14px;
+      color: #666;
+      margin-left: 5px;
+    }
+
+    /* Right Section */
+    .navbar-right a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    .navbar-right a:hover {
+      color: #f4a300;
+    }
+
+    /* Divider */
+    .navbar-right a:not(:last-child)::after {
+      content: "|";
+      margin-left: 20px;
+      color: #aaa;
+    }
+
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
+}
